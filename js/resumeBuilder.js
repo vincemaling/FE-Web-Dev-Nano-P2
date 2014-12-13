@@ -89,11 +89,14 @@ var bio = {
 
 		var formattedMobile = HTMLmobile.replace("%data%",bio.contacts[0].mobile_number);
 		$("#topContacts").append(formattedMobile);
+		$("#footerContacts").append(formattedMobile);
 		var formattedEmail = HTMLemail.replace("%data%",bio.contacts[0].email);
 		$("#topContacts").append(formattedEmail);
+		$("#footerContacts").append(formattedEmail);
 		var formattedLocation = HTMLlocation.replace("%data%",bio.contacts[0].location);
 		$("#topContacts").append(formattedLocation);
-
+		$("#footerContacts").append(formattedLocation);
+		
 		var formattedPic = HTMLbioPic.replace("%data%",bio.pic);
 		$("#header").append(formattedPic);
 		var formattedMsg = HTMLWelcomeMsg.replace("%data%",bio.welcome_message);
